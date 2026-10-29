@@ -5,7 +5,7 @@
 ## Key facts
 
 - Works with Gmail and Google Workspace accounts only (it sends through the Gmail API).
-- Asks Google for one Gmail permission, sending mail. It cannot read, modify or delete messages, so replies arrive in Gmail as usual and Dispatch does not show reply status.
+- Asks Google for one Gmail permission, sending mail. It cannot read, modify or delete messages, so replies arrive in Gmail as usual, but Dispatch cannot detect them and does not track reply stats.
 - Pacing: about one minute between messages, with a daily cap. Messages over the cap roll into the next day.
 - Imported campaigns (CSV upload, Gmail add-on, API key) always arrive as drafts. Nothing sends until the user presses Send.
 - The API key can only import campaigns. It cannot send mail or change the Gmail connection.
