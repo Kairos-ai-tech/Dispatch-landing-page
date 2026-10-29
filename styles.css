@@ -297,5 +297,5 @@ section { padding-block: clamp(72px, 11vw, 140px); }
   :lang(zh-TW) .ledger li, :lang(ja) .ledger li, :lang(ko) .ledger li { grid-template-columns: 1fr; }
 }
 
-.flow-wrap { overflow-x: auto; }
+.flow-scroll, .code { overflow-x: auto; scrollbar-width: thin; scrollbar-color: color-mix(in oklab, var(--cream) 30%, transparent) transparent; }
 @media (max-width: 700px) { .flow { min-width: 640px; } }
