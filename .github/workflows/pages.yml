@@ -23,13 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
-      - name: Stage site
-        run: |
-          mkdir _site
-          cp index.html styles.css hero.js i18n.js .nojekyll _site/
-          cp -r assets _site/assets
+        id: pages
+      - name: Build localized pages
+        env:
+          SITE_URL: ${{ steps.pages.outputs.base_url }}
+        run: node scripts/build.mjs
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist
       - id: deployment
         uses: actions/deploy-pages@v4

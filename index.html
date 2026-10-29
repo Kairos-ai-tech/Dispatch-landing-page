@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dispatch · Cold outreach from your own Gmail</title>
-  <meta name="description" content="Write once, add recipients, and Dispatch sends one personal email at a time from your Gmail, paced, tracked and followed up until they reply.">
+  <meta name="description" content="Write once, add recipients, and Dispatch sends one personal email at a time from your Gmail, paced and tracked, with an optional follow-up.">
   <meta name="theme-color" content="#10231b">
   <meta property="og:title" content="Dispatch · Cold outreach from your own Gmail">
   <meta property="og:description" content="Paced, tracked, personal. Replies and the Sent folder stay yours.">
@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="styles.css">
+<!--SEO-->
   <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
@@ -31,6 +32,7 @@
       <nav aria-label="Primary">
         <a href="#how" data-i18n="nav.how">How it works</a>
         <a href="#automation" data-i18n="nav.auto">Automation</a>
+        <a href="#compare" data-i18n="cmp.eyebrow">Compare</a>
         <a href="#pricing" data-i18n="nav.price">Pricing</a>
       </nav>
       <div class="nav-cta">
@@ -54,7 +56,7 @@
       <div class="wrap hero-in">
         <p class="eyebrow" data-i18n="hero.eyebrow">Cold outreach, from your own Gmail</p>
         <h1 data-i18n-html="hero.h1">Cold email that still reads like <em>you</em>.</h1>
-        <p class="lede" data-i18n="hero.lede">Write once, add your list, and Dispatch sends one message at a time from your address, paced, tracked, and followed up until they answer. Replies land in your inbox, not ours.</p>
+        <p class="lede" data-i18n="hero.lede">Write once, add your list, and Dispatch sends one message at a time from your address, paced and tracked, with a follow-up for anyone who stays quiet. Replies land in your inbox, not ours.</p>
         <div class="cta">
           <a class="btn btn-light btn-lg" href="https://dispatch.app.kairosaitech.com/login" data-i18n="nav.start">Start free</a>
           <a class="btn btn-ghost btn-lg" href="#how" data-i18n="hero.cta2">See how it works</a>
@@ -82,7 +84,7 @@
           </li>
           <li class="reveal">
             <span class="step-n">2</span>
-            <div><h3 data-i18n="s2.h">Compose</h3><p data-i18n-html="s2.p">Paste emails or upload a CSV. Use merge tags like <code>{{firstName}}</code> and <code>{{company}}</code>, add a signature, queue up to four follow-ups.</p></div>
+            <div><h3 data-i18n="s2.h">Compose</h3><p data-i18n-html="s2.p">Paste emails or upload a CSV. Use merge tags like <code>{{firstName}}</code> and <code>{{company}}</code>, add a signature, and queue a follow-up.</p></div>
           </li>
           <li class="reveal">
             <span class="step-n">3</span>
@@ -90,7 +92,7 @@
           </li>
           <li class="reveal">
             <span class="step-n">4</span>
-            <div><h3 data-i18n="s4.h">Follow up, then stop</h3><p data-i18n="s4.p">Follow-ups go out as replies in the same thread. The moment someone answers or unsubscribes, their sequence ends.</p></div>
+            <div><h3 data-i18n="s4.h">Follow up in the same thread</h3><p data-i18n="s4.p">A follow-up goes out as a reply in the same thread after the wait you set. Anyone who unsubscribes is skipped, now and in every future campaign.</p></div>
           </li>
         </ol>
       </div>
@@ -101,11 +103,11 @@
         <div class="show-copy">
           <p class="eyebrow dark" data-i18n="track.eyebrow">Track</p>
           <h2 data-i18n="track.h2">See each recipient's journey.</h2>
-          <p data-i18n="track.p">Sent, opened, clicked, replied, unsubscribed. Pause or resume a running campaign, and compare campaigns side by side in Reports.</p>
+          <p data-i18n="track.p">Sent, opened, clicked, unsubscribed, failed: every recipient's status in one place. Pause or resume a running campaign, and compare campaigns side by side in Reports.</p>
           <ul class="ticks">
-            <li data-i18n="track.t1">Reply detection keeps follow-ups from landing on top of an answer</li>
-            <li data-i18n="track.t2">Click tracking through a redirect you can switch off per campaign</li>
-            <li data-i18n="track.t3">Engagement labels in Gmail, opt-in</li>
+            <li data-i18n="track.t1">Open and click tracking, switchable per campaign</li>
+            <li data-i18n="track.t2">Clicks go through a redirect, so they are more reliable than open pixels</li>
+            <li data-i18n="track.t3">Replies land in your Gmail inbox as usual</li>
           </ul>
         </div>
         <figure class="frame"><img src="assets/screenshot-4-campaign-detail.png" width="1280" height="800" loading="lazy" alt="Dispatch campaign page showing recipients and their delivery status" data-i18n-alt="track.alt"></figure>
@@ -152,6 +154,92 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
       </div>
     </section>
 
+    <section class="compare" id="compare">
+      <div class="wrap">
+        <div class="reveal cmp-head">
+          <p class="eyebrow dark" data-i18n="cmp.eyebrow">Compare</p>
+          <h2 data-i18n="cmp.h2">How Dispatch compares with similar tools.</h2>
+          <p data-i18n="cmp.intro">Plenty of tools send cold email. Here is how Dispatch stacks up against the ones people ask about most, using each vendor's public pricing page.</p>
+        </div>
+        <div class="tbl reveal" tabindex="0" role="region" aria-labelledby="cmp-cap">
+          <table>
+            <caption id="cmp-cap" class="sr-only" data-i18n="cmp.caption">Dispatch compared with similar cold-email tools</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col" class="us">Dispatch</th>
+                <th scope="col"><a href="https://www.gmass.co/pricing" rel="noopener">GMass</a></th>
+                <th scope="col"><a href="https://mailmeteor.com/pricing" rel="noopener">Mailmeteor</a></th>
+                <th scope="col"><a href="https://yamm.com/pricing" rel="noopener">Yet Another Mail Merge</a></th>
+                <th scope="col"><a href="https://instantly.ai/pricing" rel="noopener">Instantly</a></th>
+                <th scope="col"><a href="https://www.lemlist.com/pricing" rel="noopener">lemlist</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n="cmp.r.for">Built for</th>
+                <td class="us" data-i18n="cmp.for.d">Personal, paced cold outreach from one Gmail</td>
+                <td data-i18n="cmp.for.g">Campaigns from Gmail's compose window (Chrome extension)</td>
+                <td data-i18n="cmp.for.m">Mail merge and campaigns with Google Sheets automations</td>
+                <td data-i18n="cmp.for.y">Mail merge from Google Sheets</td>
+                <td data-i18n="cmp.for.i">High-volume cold email across many inboxes, plus a lead database</td>
+                <td data-i18n="cmp.for.l">Multichannel outreach: email, LinkedIn, SMS, calling</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="cmp.r.free">Free plan</th>
+                <td class="us" data-i18n="free.f1">10 sends a day</td>
+                <td data-i18n="cmp.free.g">No free plan (free trial)</td>
+                <td data-i18n="cmp.free.m">50 sends a day</td>
+                <td data-i18n="cmp.free.y">20 recipients a day</td>
+                <td data-i18n="cmp.free.i">No free plan</td>
+                <td data-i18n="cmp.free.l">14-day free trial</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="cmp.r.price">Cheapest paid plan, USD / month</th>
+                <td class="us">$19 <small>· $15 <span data-i18n="cmp.yr">billed yearly</span></small></td>
+                <td>$29.95 <small>· $20 <span data-i18n="cmp.yr">billed yearly</span></small></td>
+                <td>$5.99</td>
+                <td data-i18n="cmp.nl">Not listed</td>
+                <td>$47</td>
+                <td>$69 <small>· $55 <span data-i18n="cmp.yr">billed yearly</span></small></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="cmp.r.limit">Sending limit on that plan</th>
+                <td class="us" data-i18n="pro.f1">500 sends a day</td>
+                <td data-i18n="cmp.lim.g">No fixed cap listed</td>
+                <td data-i18n="cmp.lim.m">250 a day</td>
+                <td data-i18n="cmp.lim.y">400 a day (Gmail), 1,500 (Workspace)</td>
+                <td data-i18n="cmp.lim.i">5,000 a month</td>
+                <td data-i18n="cmp.lim.l">50,000 a month</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="cmp.r.fu">Follow-ups</th>
+                <td class="us" data-i18n="cmp.fu.d">1 per campaign, on every plan</td>
+                <td data-i18n="cmp.fu.g">Sequences from the $39.95 plan</td>
+                <td data-i18n="cmp.fu.m">From the $17.99 plan (5 follow-ups)</td>
+                <td data-i18n="cmp.fu.y">Listed on every plan</td>
+                <td data-i18n="cmp.fu.i">Yes, multi-step sequences</td>
+                <td data-i18n="cmp.fu.i">Yes, multi-step sequences</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="cmp-note reveal" data-i18n="cmp.note">Prices come from each vendor's public pricing page, checked in October 2026 and shown in USD. “Not listed” means the page did not say. Plans change often, so check the vendor's site before you decide.</p>
+
+        <div class="fit reveal">
+          <h3 data-i18n="win.h">Which one fits you?</h3>
+          <ul class="ledger">
+            <li><b>Dispatch</b><span data-i18n="win.d">You send personal outreach from one Gmail, want every import to arrive as a draft you review, and prefer a tool whose only Gmail permission is sending.</span></li>
+            <li><b>GMass</b><span data-i18n="win.g">You want to run campaigns from Gmail's compose window, with conditional mail merge and A/B testing.</span></li>
+            <li><b>Mailmeteor</b><span data-i18n="win.m">You want the lowest paid price or a free tier with 50 sends a day, plus Google Sheets automations.</span></li>
+            <li><b>Yet Another Mail Merge</b><span data-i18n="win.y">You already live in Google Sheets and want a simple mail merge with a free tier.</span></li>
+            <li><b>Instantly</b><span data-i18n="win.i">You send at high volume across many inboxes and want unlimited warm-up and a lead database.</span></li>
+            <li><b>lemlist</b><span data-i18n="win.l">You want email, LinkedIn, SMS and calling in a single sequence.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="pricing" id="pricing">
       <div class="wrap">
         <div class="reveal price-head">
@@ -179,6 +267,20 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
             </ul>
             <a class="btn btn-dark" href="https://dispatch.app.kairosaitech.com/pricing" data-i18n="pro.cta">Go Pro</a>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="wrap faq-grid">
+        <h2 class="reveal" data-i18n="faq.h2">Questions people ask</h2>
+        <div class="faq-list reveal">
+          <details><summary data-i18n="faq.q1">What is Dispatch?</summary><p data-i18n="faq.a1">Dispatch is a cold-email tool that sends personal outreach campaigns from your own Gmail account. You write a message once, add recipients, and it sends them one at a time on a paced schedule with open and click tracking, a one-click unsubscribe link and an optional follow-up.</p></details>
+          <details><summary data-i18n="faq.q2">How is Dispatch different from GMass, Mailmeteor or Yet Another Mail Merge?</summary><p data-i18n="faq.a2">All of them can send from Gmail. Dispatch is built around a review-first, paced workflow: imports always arrive as drafts, sending runs on a schedule with a daily cap, the API key can only import, and the only Gmail permission it asks for is sending. It does not include a lead database, warm-up or multichannel sequences.</p></details>
+          <details><summary data-i18n="faq.q3">Can Dispatch read my inbox?</summary><p data-i18n="faq.a3">No. Dispatch asks Google for one Gmail permission: sending mail. It cannot read, modify or delete your messages. Replies arrive in your Gmail as usual, so Dispatch does not show reply status. You can disconnect at any time and the stored token is revoked.</p></details>
+          <details><summary data-i18n="faq.q4">How many emails can I send?</summary><p data-i18n="faq.a4">The Free plan sends up to 10 emails a day from one Gmail mailbox. Pro sends up to 500 a day from up to three mailboxes. Messages go out about a minute apart, and anything over the daily cap rolls into the next day.</p></details>
+          <details><summary data-i18n="faq.q5">How much does Dispatch cost?</summary><p data-i18n="faq.a5">Free is $0. Pro is $19 a month, or $15 a month billed yearly ($180). Both plans include tracking, a follow-up and API import.</p></details>
+          <details><summary data-i18n="faq.q6">Does Dispatch work with Outlook or other email providers?</summary><p data-i18n="faq.a6">No. Dispatch sends through the Gmail API, so it works with Gmail and Google Workspace accounts only. You are also responsible for the legal side of cold outreach: an honest subject, your identity and a lawful basis.</p></details>
         </div>
       </div>
     </section>

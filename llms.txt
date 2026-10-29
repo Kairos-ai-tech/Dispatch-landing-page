@@ -1,0 +1,38 @@
+# Dispatch
+
+> Dispatch sends personal cold-outreach campaigns from your own Gmail account. You write a message once, add recipients, and Dispatch sends them one at a time on a paced schedule, with open and click tracking, a one-click unsubscribe link in every message, and an optional follow-up in the same thread. Built by Kairos AI Tech.
+
+## Key facts
+
+- Works with Gmail and Google Workspace accounts only (it sends through the Gmail API).
+- Asks Google for one Gmail permission, sending mail. It cannot read, modify or delete messages, so replies arrive in Gmail as usual and Dispatch does not show reply status.
+- Pacing: about one minute between messages, with a daily cap. Messages over the cap roll into the next day.
+- Imported campaigns (CSV upload, Gmail add-on, API key) always arrive as drafts. Nothing sends until the user presses Send.
+- The API key can only import campaigns. It cannot send mail or change the Gmail connection.
+- Every message carries an unsubscribe link. Unsubscribed addresses go on a suppression list that applies to all of the user's campaigns.
+- Not included: lead database, email warm-up, multichannel (LinkedIn, SMS, calling) sequences.
+
+## Pricing (USD)
+
+- Free: $0. 10 sends a day, 1 Gmail mailbox, tracking, a follow-up, API import.
+- Pro: $19 a month, or $15 a month billed yearly ($180). 500 sends a day, 3 Gmail mailboxes.
+
+## Comparison (public pricing pages, checked October 2026)
+
+- GMass: Gmail extension for campaigns from the compose window. No free plan (free trial). From $29.95 a month ($20 billed yearly). Sequences from the $39.95 plan.
+- Mailmeteor: mail merge with Google Sheets automations. Free plan with 50 sends a day. From $5.99 a month. Follow-ups from the $17.99 plan.
+- Yet Another Mail Merge: mail merge from Google Sheets. Free plan with 20 recipients a day. Pro limits 400 a day (Gmail) or 1,500 (Workspace). Prices not listed on its pricing page.
+- Instantly: high-volume cold email across many inboxes, plus a lead database. No free plan. From about $47 a month.
+- lemlist: multichannel outreach (email, LinkedIn, SMS, calling). 14-day free trial. Email plan $69 a month ($55 billed yearly).
+
+## Pages
+
+- [Home (English)]({{SITE}}/)
+- [繁體中文]({{SITE}}/zh-tw/)
+- [Español]({{SITE}}/es/)
+- [日本語]({{SITE}}/ja/)
+- [한국어]({{SITE}}/ko/)
+- [Pricing](https://dispatch.app.kairosaitech.com/pricing)
+- [Help](https://dispatch.app.kairosaitech.com/help)
+- [Privacy](https://dispatch.app.kairosaitech.com/privacy)
+- [Terms](https://dispatch.app.kairosaitech.com/terms)
