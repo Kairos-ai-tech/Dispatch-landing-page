@@ -15,19 +15,22 @@ Static site, one dependency-free build step.
     node scripts/build.mjs
     cd dist && python3 -m http.server 8765
 
-`SITE_URL` sets the absolute URLs used in canonical, hreflang, sitemap and robots. Default is the GitHub Pages project URL.
+`SITE_URL` sets the absolute URLs used in canonical, hreflang, sitemap and robots. Default is `https://dispatch.kairosaitech.com`.
 
 ## Deploy on GitHub Pages
 
 Repo Settings → Pages → Source: **GitHub Actions**. Every push to `main` runs `.github/workflows/pages.yml`,
-builds with the Pages `base_url` as `SITE_URL`, and publishes `dist/`.
+builds with `SITE_URL=https://dispatch.kairosaitech.com` (set in the workflow), and publishes `dist/`.
 
-## robots.txt and sitemap on a project page
+## Custom domain
 
-Crawlers read `robots.txt` only at the host root. On `https://<org>.github.io/<repo>/` the generated
-`/<repo>/robots.txt` is ignored, including its `Sitemap:` line. It takes effect on a custom domain (add a `CNAME`
-file to the repo root, copy it in `build.mjs`, and set the domain in Pages settings), or by putting the same
-file in the `<org>.github.io` repo. Submit `sitemap.txt` in Google Search Console and Bing Webmaster Tools either way.
+The site is served at `https://dispatch.kairosaitech.com`. `CNAME` is copied into `dist/`, so the domain is served from the root and
+`robots.txt` and `sitemap.txt` sit where crawlers look for them.
+
+One-time setup:
+1. DNS: `CNAME` record `dispatch` -> `kairos-ai-tech.github.io` (use the `<org>.github.io` host, not the repo URL).
+2. Repo Settings -> Pages -> Custom domain: `dispatch.kairosaitech.com`, then tick **Enforce HTTPS** once the certificate is issued.
+3. Submit `https://dispatch.kairosaitech.com/sitemap.txt` in Google Search Console and Bing Webmaster Tools.
 
 ## Editing copy
 

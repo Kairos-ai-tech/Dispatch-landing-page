@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const out = path.join(root, "dist");
-const SITE = (process.env.SITE_URL || "https://kairos-ai-tech.github.io/Dispatch-landing-page").replace(/\/+$/, "");
-const DEFAULT_SITE = "https://kairos-ai-tech.github.io/Dispatch-landing-page";
+const SITE = (process.env.SITE_URL || "https://dispatch.kairosaitech.com").replace(/\/+$/, "");
+const DEFAULT_SITE = "https://dispatch.kairosaitech.com";
 
 const LANGS = [
   { code: "en", dir: "", locale: "en_US" },
@@ -138,7 +138,7 @@ for (const lang of LANGS) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), render(lang));
 }
-for (const f of ["styles.css", "hero.js", "i18n.js", ".nojekyll"]) fs.copyFileSync(path.join(root, f), path.join(out, f));
+for (const f of ["styles.css", "hero.js", "i18n.js", ".nojekyll", "CNAME"]) fs.copyFileSync(path.join(root, f), path.join(out, f));
 fs.cpSync(path.join(root, "assets"), path.join(out, "assets"), { recursive: true });
 
 fs.writeFileSync(path.join(out, "sitemap.txt"), LANGS.map(pageUrl).join("\n") + "\n");
