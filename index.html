@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dispatch · Cold outreach from your own Gmail</title>
+  <meta name="description" content="Write once, add recipients, and Dispatch sends one personal email at a time from your Gmail, paced, tracked and followed up until they reply.">
+  <meta name="theme-color" content="#10231b">
+  <meta property="og:title" content="Dispatch · Cold outreach from your own Gmail">
+  <meta property="og:description" content="Paced, tracked, personal. Replies and the Sent folder stay yours.">
+  <meta property="og:image" content="assets/icon-180.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#top" aria-label="Dispatch home">
+        <img src="assets/favicon.svg" alt="" width="30" height="30">
+        <span>Dispatch</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#how">How it works</a>
+        <a href="#automation">Automation</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="link" href="https://dispatch.app.kairosaitech.com/login">Sign in</a>
+        <a class="btn btn-light" href="https://dispatch.app.kairosaitech.com/login">Start free</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="wrap hero-in">
+        <p class="eyebrow">Cold outreach, from your own Gmail</p>
+        <h1>Cold email that still reads like <em>you</em>.</h1>
+        <p class="lede">Write once, add your list, and Dispatch sends one message at a time from your address, paced, tracked, and followed up until they answer. Replies land in your inbox, not ours.</p>
+        <div class="cta">
+          <a class="btn btn-light btn-lg" href="https://dispatch.app.kairosaitech.com/login">Start free</a>
+          <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+        </div>
+        <p class="fine">Free plan: 10 sends a day, one mailbox.</p>
+      </div>
+      <dl class="legend" aria-label="Illustration of a campaign in flight">
+        <div><dt><i class="k-sent"></i>Sent</dt><dd id="n-sent">0</dd></div>
+        <div><dt><i class="k-open"></i>Opened</dt><dd id="n-opened">0</dd></div>
+        <div><dt><i class="k-reply"></i>Replied</dt><dd id="n-replied">0</dd></div>
+      </dl>
+    </section>
+
+    <section class="how" id="how">
+      <div class="wrap how-grid">
+        <div class="how-head reveal">
+          <p class="eyebrow dark">How it works</p>
+          <h2>One message, sent the way a person would send it.</h2>
+          <p>Bulk tools blast from their servers and shared reputations. Dispatch goes out through your Gmail, one at a time, so every email lands in the Sent folder you already know.</p>
+        </div>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-n">1</span>
+            <div><h3>Connect Gmail</h3><p>Approve once. Pick any verified send-as alias as the sender. Disconnect whenever you like and the stored token is revoked.</p></div>
+          </li>
+          <li class="reveal">
+            <span class="step-n">2</span>
+            <div><h3>Compose</h3><p>Paste emails or upload a CSV. Use merge tags like <code>{{firstName}}</code> and <code>{{company}}</code>, add a signature, queue up to four follow-ups.</p></div>
+          </li>
+          <li class="reveal">
+            <span class="step-n">3</span>
+            <div><h3>Dispatch paces it</h3><p>About a minute between messages and a daily cap, so a campaign looks like a person working through a list, not a burst.</p></div>
+          </li>
+          <li class="reveal">
+            <span class="step-n">4</span>
+            <div><h3>Follow up, then stop</h3><p>Follow-ups go out as replies in the same thread. The moment someone answers or unsubscribes, their sequence ends.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="show">
+      <div class="wrap show-row reveal">
+        <div class="show-copy">
+          <p class="eyebrow dark">Track</p>
+          <h2>See each recipient's journey.</h2>
+          <p>Sent, opened, clicked, replied, unsubscribed. Pause or resume a running campaign, and compare campaigns side by side in Reports.</p>
+          <ul class="ticks">
+            <li>Reply detection keeps follow-ups from landing on top of an answer</li>
+            <li>Click tracking through a redirect you can switch off per campaign</li>
+            <li>Engagement labels in Gmail, opt-in</li>
+          </ul>
+        </div>
+        <figure class="frame"><img src="assets/screenshot-4-campaign-detail.png" width="1280" height="800" loading="lazy" alt="Dispatch campaign page showing recipients and their delivery status"></figure>
+      </div>
+      <div class="wrap show-row flip reveal">
+        <div class="show-copy">
+          <p class="eyebrow dark">Compose</p>
+          <h2>Personal at the first line, scalable at the tenth hundred.</h2>
+          <p>Merge fields, per-language signatures, an optional send-at time. Imported campaigns always arrive as drafts, so nothing leaves until you press Send.</p>
+        </div>
+        <figure class="frame"><img src="assets/screenshot-2-compose.png" width="1280" height="800" loading="lazy" alt="Dispatch composer with audience, message, follow-ups and delivery settings"></figure>
+      </div>
+    </section>
+
+    <section class="auto" id="automation">
+      <div class="wrap auto-grid">
+        <div class="reveal">
+          <p class="eyebrow">Automation</p>
+          <h2>Plug it into whatever already builds your lists.</h2>
+          <p>Generate an API key, then post a CSV from cron, GitHub Actions, Zapier or n8n. The key can only import, so it can't send mail or touch your Gmail connection. Repeat the same campaign name and the rows merge into one draft.</p>
+          <p>Prefer to stay in the inbox? The Gmail add-on builds and imports campaigns from inside Gmail.</p>
+        </div>
+        <div class="code reveal" role="img" aria-label="curl example posting a CSV to the Dispatch import endpoint">
+<pre><span class="c-dim">$</span> curl -X POST <span class="c-amber">"$DISPATCH_URL/api/addon/campaign.import"</span> \
+  -H <span class="c-amber">"X-Dispatch-Api-Key: $KEY"</span> \
+  -d <span class="c-amber">'{"name": "Daily sync",
+       "csv": "email,subject,content,sendAt
+ann@example.com,Hi,Hello Ann,09:30"}'</span>
+
+<span class="c-dim">→ draft created · 1 recipient · review, then press Send</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="safe">
+      <div class="wrap safe-grid">
+        <h2 class="reveal">Built to stay out of the spam folder.</h2>
+        <ul class="ledger">
+          <li class="reveal"><b>Paced sending</b><span>About a minute between messages, with a daily cap you control. Overflow rolls to tomorrow.</span></li>
+          <li class="reveal"><b>One-click unsubscribe</b><span>Every message carries it. Unsubscribes go on a suppression list that applies across all your campaigns.</span></li>
+          <li class="reveal"><b>Your reputation, your thread</b><span>Mail leaves from your own address and threads like normal, so replies and the Sent folder stay yours.</span></li>
+          <li class="reveal"><b>No blind retries</b><span>If a send's outcome is unclear, Dispatch marks it failed instead of retrying, so nobody gets the same email twice.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="wrap">
+        <div class="reveal price-head">
+          <p class="eyebrow dark">Pricing</p>
+          <h2>Start free. Upgrade when the list grows.</h2>
+        </div>
+        <div class="plans">
+          <div class="plan reveal">
+            <h3>Free</h3>
+            <p class="price"><span>$0</span></p>
+            <ul>
+              <li>10 sends a day</li>
+              <li>1 Gmail mailbox</li>
+              <li>Tracking, follow-ups, API import</li>
+            </ul>
+            <a class="btn btn-outline" href="https://dispatch.app.kairosaitech.com/login">Start free</a>
+          </div>
+          <div class="plan pro reveal">
+            <h3>Pro</h3>
+            <p class="price"><span>$19</span> / month <small>or $15 / month billed yearly, $180</small></p>
+            <ul>
+              <li>500 sends a day</li>
+              <li>3 Gmail mailboxes</li>
+              <li>Everything in Free</li>
+            </ul>
+            <a class="btn btn-dark" href="https://dispatch.app.kairosaitech.com/pricing">Go Pro</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap reveal">
+        <h2>Your next outreach batch, sent like a person sent it.</h2>
+        <a class="btn btn-light btn-lg" href="https://dispatch.app.kairosaitech.com/login">Start free</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>© Kairos AI Tech</span>
+      <nav aria-label="Footer">
+        <a href="https://dispatch.app.kairosaitech.com/help">Help</a>
+        <a href="https://dispatch.app.kairosaitech.com/privacy">Privacy</a>
+        <a href="https://dispatch.app.kairosaitech.com/terms">Terms</a>
+        <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="hero.js"></script>
+  <script>
+    (() => {
+      const nav = document.getElementById("nav");
+      const onScroll = () => nav.classList.toggle("solid", scrollY > 24);
+      onScroll();
+      addEventListener("scroll", onScroll, { passive: true });
+      const els = document.querySelectorAll(".reveal");
+      if (!("IntersectionObserver" in window)) return els.forEach((e) => e.classList.add("in"));
+      const io = new IntersectionObserver((list) => list.forEach((e) => {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      }), { rootMargin: "0px 0px -8% 0px" });
+      els.forEach((e, i) => { e.style.setProperty("--d", (i % 4) * 70 + "ms"); io.observe(e); });
+    })();
+  </script>
+</body>
+</html>
