@@ -1,6 +1,6 @@
 # Dispatch landing page
 
-Static site: `index.html`, `styles.css`, `hero.js`, `assets/`. No build step.
+Static site: `index.html`, `styles.css`, `hero.js`, `i18n.js`, `assets/`. No build step.
 
 ## Preview
 

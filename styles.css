@@ -164,3 +164,29 @@ section { padding-block: clamp(72px, 11vw, 140px); }
   .js .reveal { opacity: 1; transform: none; transition: none; }
   .frame, .flip .frame { transform: none; transition: none; }
 }
+
+.price i { font-style: normal; }
+.lang { appearance: none; background: transparent; color: var(--cream); border: 1px solid color-mix(in oklab, var(--cream) 30%, transparent); border-radius: 999px; height: 34px; padding: 0 28px 0 14px; font: inherit; font-size: 13px; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%23f4f0e8' stroke-width='1.5'%3E%3Cpath d='M1 1l4 4 4-4'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 11px center; }
+.lang:hover { border-color: var(--cream); }
+.lang option { color: var(--ink); background: var(--cream); }
+
+:lang(zh-TW) { --display: "Fraunces", "Noto Serif TC", "PingFang TC", "Songti TC", serif; --sans: "Figtree", "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; }
+:lang(ja) { --display: "Fraunces", "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif; --sans: "Figtree", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif; }
+:lang(ko) { --display: "Fraunces", "Noto Serif KR", "AppleMyungjo", serif; --sans: "Figtree", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+:lang(zh-TW) h1, :lang(zh-TW) h2, :lang(zh-TW) h3,
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3,
+:lang(ko) h1, :lang(ko) h2, :lang(ko) h3 { letter-spacing: 0; line-height: 1.22; }
+:lang(zh-TW) .hero h1, :lang(ja) .hero h1, :lang(ko) .hero h1 { font-size: clamp(38px, 6vw, 80px); line-height: 1.18; max-width: 14em; }
+:lang(zh-TW) .hero h1 em, :lang(ja) .hero h1 em, :lang(ko) .hero h1 em { font-style: normal; font-weight: 500; }
+:lang(zh-TW) .eyebrow, :lang(ja) .eyebrow, :lang(ko) .eyebrow { letter-spacing: 0.08em; }
+:lang(zh-TW) body, :lang(ja) body, :lang(ko) body { line-height: 1.75; }
+:lang(ko) body { word-break: keep-all; }
+:lang(es) .ledger li { grid-template-columns: 13em 1fr; }
+
+@media (max-width: 860px) {
+  .lang { height: 32px; font-size: 12px; padding-left: 10px; }
+  .nav-cta { gap: 10px; }
+  :lang(es) .ledger li { grid-template-columns: 1fr; }
+}
+:lang(zh-TW) .eyebrow, :lang(ja) .eyebrow, :lang(ko) .eyebrow { text-transform: none; }
+:lang(zh-TW) .hero h1, :lang(ja) .hero h1, :lang(ko) .hero h1 { font-size: clamp(34px, 5.2vw, 68px); }
