@@ -61,7 +61,7 @@
           <a class="btn btn-light btn-lg" href="https://dispatch.app.kairosaitech.com/login" data-i18n="nav.start">Start free</a>
           <a class="btn btn-ghost btn-lg" href="#how" data-i18n="hero.cta2">See how it works</a>
         </div>
-        <p class="fine" data-i18n="hero.fine">Free plan: 10 sends a day, one mailbox.</p>
+        <p class="fine" data-i18n="hero.fine">Free plan: 20 sends a day, one mailbox.</p>
       </div>
       <dl class="legend" aria-label="Illustration of a campaign in flight" data-i18n-aria="legend.aria">
         <div><dt><i class="k-sent"></i><span data-i18n="legend.sent">Sent</span></dt><dd id="n-sent">0</dd></div>
@@ -76,6 +76,7 @@
           <p class="eyebrow dark" data-i18n="nav.how">How it works</p>
           <h2 data-i18n="how.h2">One message, sent the way a person would send it.</h2>
           <p data-i18n="how.p">Bulk tools blast from their servers and shared reputations. Dispatch goes out through your Gmail, one at a time, so every email lands in the Sent folder you already know.</p>
+          <figure class="photo photo-tall"><img src="assets/photo-desk.jpg" width="900" height="1100" loading="lazy" alt="" data-parallax></figure>
         </div>
         <ol class="steps">
           <li class="reveal">
@@ -88,7 +89,8 @@
           </li>
           <li class="reveal">
             <span class="step-n">3</span>
-            <div><h3 data-i18n="s3.h">Dispatch paces it</h3><p data-i18n="s3.p">About a minute between messages and a daily cap, so a campaign looks like a person working through a list, not a burst.</p></div>
+            <div><h3 data-i18n="s3.h">Dispatch paces it</h3><p data-i18n="s3.p">About a minute between messages and a daily cap, so a campaign looks like a person working through a list, not a burst.</p>
+              <div class="pace" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i></div></div>
           </li>
           <li class="reveal">
             <span class="step-n">4</span>
@@ -140,11 +142,65 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
 <span class="c-dim">→ draft created · 1 recipient · review, then press Send</span></pre>
         </div>
       </div>
+      <div class="wrap reveal flow-wrap">
+        <svg class="flow" viewBox="0 0 1000 300" role="img" aria-label="Automations such as cron, GitHub Actions, Zapier and n8n send a CSV to Dispatch, which creates a draft you review and then sends one by one through Gmail to your recipients" data-i18n-aria="flow.aria">
+          <defs>
+            <path id="f1" d="M170 52 C 280 52, 300 150, 410 150"/>
+            <path id="f2" d="M170 117 C 280 117, 300 150, 410 150"/>
+            <path id="f3" d="M170 183 C 280 183, 300 150, 410 150"/>
+            <path id="f4" d="M170 248 C 280 248, 300 150, 410 150"/>
+            <path id="g1" d="M520 150 L 640 150"/>
+            <path id="r1" d="M740 150 C 800 150, 820 50, 900 50"/>
+            <path id="r2" d="M740 150 C 800 150, 830 100, 920 100"/>
+            <path id="r3" d="M740 150 C 800 150, 840 150, 930 150"/>
+            <path id="r4" d="M740 150 C 800 150, 830 200, 920 200"/>
+            <path id="r5" d="M740 150 C 800 150, 820 250, 900 250"/>
+          </defs>
+          <g class="flow-lines" fill="none" stroke-width="1.2">
+            <use href="#f1"/><use href="#f2"/><use href="#f3"/><use href="#f4"/>
+            <use href="#g1"/>
+            <use href="#r1"/><use href="#r2"/><use href="#r3"/><use href="#r4"/><use href="#r5"/>
+          </g>
+          <g class="flow-src" font-size="15">
+            <rect x="0" y="34" width="170" height="36" rx="18"/><text x="85" y="57" text-anchor="middle">cron</text>
+            <rect x="0" y="99" width="170" height="36" rx="18"/><text x="85" y="122" text-anchor="middle">GitHub Actions</text>
+            <rect x="0" y="165" width="170" height="36" rx="18"/><text x="85" y="188" text-anchor="middle">Zapier</text>
+            <rect x="0" y="230" width="170" height="36" rx="18"/><text x="85" y="253" text-anchor="middle">n8n</text>
+          </g>
+          <g class="flow-hub">
+            <rect x="410" y="110" width="110" height="80" rx="16"/>
+            <text x="465" y="146" text-anchor="middle" font-size="17" class="flow-name">Dispatch</text>
+            <text x="465" y="168" text-anchor="middle" font-size="12" class="flow-sub" data-i18n="flow.draft">draft</text>
+          </g>
+          <g class="flow-hub gm">
+            <rect x="640" y="120" width="100" height="60" rx="14"/>
+            <text x="690" y="156" text-anchor="middle" font-size="16" class="flow-name">Gmail</text>
+          </g>
+          <g class="flow-dots"><circle cx="900" cy="50" r="7"/><circle cx="920" cy="100" r="7"/><circle cx="930" cy="150" r="7"/><circle cx="920" cy="200" r="7"/><circle cx="900" cy="250" r="7"/></g>
+          <g class="pulse in-pulse">
+            <circle r="4"><animateMotion dur="2.4s" begin="0s" repeatCount="indefinite"><mpath href="#f1"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.4s" begin="0.6s" repeatCount="indefinite"><mpath href="#f2"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#f3"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="2.4s" begin="1.8s" repeatCount="indefinite"><mpath href="#f4"/></animateMotion></circle>
+          </g>
+          <g class="pulse out-pulse">
+            <circle r="4.5"><animateMotion dur="1.6s" begin="1s" repeatCount="indefinite"><mpath href="#g1"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3s" begin="0s" repeatCount="indefinite"><mpath href="#r1"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3s" begin="0.6s" repeatCount="indefinite"><mpath href="#r2"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3s" begin="1.2s" repeatCount="indefinite"><mpath href="#r3"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3s" begin="1.8s" repeatCount="indefinite"><mpath href="#r4"/></animateMotion></circle>
+            <circle r="4"><animateMotion dur="3s" begin="2.4s" repeatCount="indefinite"><mpath href="#r5"/></animateMotion></circle>
+          </g>
+        </svg>
+      </div>
     </section>
 
     <section class="safe">
       <div class="wrap safe-grid">
-        <h2 class="reveal" data-i18n="safe.h2">Built to stay out of the spam folder.</h2>
+        <div class="safe-head reveal">
+          <h2 data-i18n="safe.h2">Built to stay out of the spam folder.</h2>
+          <figure class="photo photo-wide"><img src="assets/photo-letters.jpg" width="1400" height="1000" loading="lazy" alt="" data-parallax></figure>
+        </div>
         <ul class="ledger">
           <li class="reveal"><b data-i18n="safe1.b">Paced sending</b><span data-i18n="safe1.s">About a minute between messages, with a daily cap you control. Overflow rolls to tomorrow.</span></li>
           <li class="reveal"><b data-i18n="safe2.b">One-click unsubscribe</b><span data-i18n="safe2.s">Every message carries it. Unsubscribes go on a suppression list that applies across all your campaigns.</span></li>
@@ -187,7 +243,7 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
               </tr>
               <tr>
                 <th scope="row" data-i18n="cmp.r.free">Free plan</th>
-                <td class="us" data-i18n="free.f1">10 sends a day</td>
+                <td class="us" data-i18n="free.f1">20 sends a day</td>
                 <td data-i18n="cmp.free.g">No free plan (free trial)</td>
                 <td data-i18n="cmp.free.m">50 sends a day</td>
                 <td data-i18n="cmp.free.y">20 recipients a day</td>
@@ -251,7 +307,7 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
             <h3 data-i18n="free.name">Free</h3>
             <p class="price"><span>$0</span></p>
             <ul>
-              <li data-i18n="free.f1">10 sends a day</li>
+              <li data-i18n="free.f1">20 sends a day</li>
               <li data-i18n="free.f2">1 Gmail mailbox</li>
               <li data-i18n="free.f3">Tracking, follow-ups, API import</li>
             </ul>
@@ -278,7 +334,7 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
           <details><summary data-i18n="faq.q1">What is Dispatch?</summary><p data-i18n="faq.a1">Dispatch is a cold-email tool that sends personal outreach campaigns from your own Gmail account. You write a message once, add recipients, and it sends them one at a time on a paced schedule with open and click tracking, a one-click unsubscribe link and an optional follow-up.</p></details>
           <details><summary data-i18n="faq.q2">How is Dispatch different from GMass, Mailmeteor or Yet Another Mail Merge?</summary><p data-i18n="faq.a2">All of them can send from Gmail. Dispatch is built around a review-first, paced workflow: imports always arrive as drafts, sending runs on a schedule with a daily cap, the API key can only import, and the only Gmail permission it asks for is sending. It does not include a lead database, warm-up or multichannel sequences.</p></details>
           <details><summary data-i18n="faq.q3">Can Dispatch read my inbox?</summary><p data-i18n="faq.a3">No. Dispatch asks Google for one Gmail permission: sending mail. It cannot read, modify or delete your messages. Replies arrive in your Gmail as usual, so Dispatch does not show reply status. You can disconnect at any time and the stored token is revoked.</p></details>
-          <details><summary data-i18n="faq.q4">How many emails can I send?</summary><p data-i18n="faq.a4">The Free plan sends up to 10 emails a day from one Gmail mailbox. Pro sends up to 500 a day from up to three mailboxes. Messages go out about a minute apart, and anything over the daily cap rolls into the next day.</p></details>
+          <details><summary data-i18n="faq.q4">How many emails can I send?</summary><p data-i18n="faq.a4">The Free plan sends up to 20 emails a day from one Gmail mailbox. Pro sends up to 500 a day from up to three mailboxes. Messages go out about a minute apart, and anything over the daily cap rolls into the next day.</p></details>
           <details><summary data-i18n="faq.q5">How much does Dispatch cost?</summary><p data-i18n="faq.a5">Free is $0. Pro is $19 a month, or $15 a month billed yearly ($180). Both plans include tracking, a follow-up and API import.</p></details>
           <details><summary data-i18n="faq.q6">Does Dispatch work with Outlook or other email providers?</summary><p data-i18n="faq.a6">No. Dispatch sends through the Gmail API, so it works with Gmail and Google Workspace accounts only. You are also responsible for the legal side of cold outreach: an honest subject, your identity and a lawful basis.</p></details>
         </div>
@@ -296,6 +352,7 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
   <footer class="foot">
     <div class="wrap foot-in">
       <span>© Kairos AI Tech</span>
+      <span class="credits"><span data-i18n="foot.photos">Photos on Unsplash:</span> <a href="https://unsplash.com/@miabaker" rel="noopener">Mia Baker</a>, <a href="https://unsplash.com/@joannakosinska" rel="noopener">Joanna Kosinska</a>, <a href="https://unsplash.com/@suehughes" rel="noopener">sue hughes</a></span>
       <nav aria-label="Footer">
         <a href="https://dispatch.app.kairosaitech.com/help" data-i18n="foot.help">Help</a>
         <a href="https://dispatch.app.kairosaitech.com/privacy" data-i18n="foot.privacy">Privacy</a>
@@ -319,6 +376,34 @@ ann@example.com,Hi,Hello Ann,09:30"}'</span>
         if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
       }), { rootMargin: "0px 0px -8% 0px" });
       els.forEach((e, i) => { e.style.setProperty("--d", (i % 4) * 70 + "ms"); io.observe(e); });
+    })();
+    (() => {
+      const steps = document.querySelector(".steps");
+      const items = steps ? steps.querySelectorAll("li") : [];
+      if (matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        if (steps) { steps.style.setProperty("--p", 1); items.forEach((li) => li.classList.add("on")); }
+        const flow = document.querySelector(".flow");
+        if (flow && flow.pauseAnimations) flow.pauseAnimations();
+        return;
+      }
+      const imgs = document.querySelectorAll("[data-parallax]");
+      let queued = false;
+      const update = () => {
+        queued = false;
+        const vh = innerHeight;
+        imgs.forEach((img) => {
+          const r = img.parentElement.getBoundingClientRect();
+          if (r.bottom < 0 || r.top > vh) return;
+          img.style.setProperty("--py", (((r.top + r.height / 2 - vh / 2) / vh) * -20).toFixed(1) + "px");
+        });
+        if (!steps) return;
+        const r = steps.getBoundingClientRect();
+        steps.style.setProperty("--p", Math.min(1, Math.max(0, (vh * 0.55 - r.top) / r.height)).toFixed(3));
+        items.forEach((li) => li.classList.toggle("on", li.getBoundingClientRect().top < vh * 0.55));
+      };
+      addEventListener("scroll", () => { if (!queued) { queued = true; requestAnimationFrame(update); } }, { passive: true });
+      addEventListener("resize", update);
+      update();
     })();
   </script>
 </body>

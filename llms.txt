@@ -14,7 +14,7 @@
 
 ## Pricing (USD)
 
-- Free: $0. 10 sends a day, 1 Gmail mailbox, tracking, a follow-up, API import.
+- Free: $0. 20 sends a day, 1 Gmail mailbox, tracking, a follow-up, API import.
 - Pro: $19 a month, or $15 a month billed yearly ($180). 500 sends a day, 3 Gmail mailboxes.
 
 ## Comparison (public pricing pages, checked October 2026)

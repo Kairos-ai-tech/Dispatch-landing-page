@@ -229,3 +229,73 @@ section { padding-block: clamp(72px, 11vw, 140px); }
   .fit .ledger li { grid-template-columns: 1fr; }
   .nav nav { display: none; }
 }
+
+@keyframes rise { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes blip { 0%, 10% { background: var(--accent); transform: scale(1.3); } 24%, 100% { background: transparent; transform: scale(1); } }
+@keyframes drift { from { transform: scale(1.02) translate3d(0, 0, 0); } to { transform: scale(1.12) translate3d(-2%, -1%, 0); } }
+
+.hero-in > * { animation: rise 1s var(--ease) both; }
+.hero-in > :nth-child(1) { animation-delay: 0.1s; }
+.hero-in > :nth-child(2) { animation-delay: 0.22s; }
+.hero-in > :nth-child(3) { animation-delay: 0.38s; }
+.hero-in > :nth-child(4) { animation-delay: 0.5s; }
+.hero-in > :nth-child(5) { animation-delay: 0.62s; }
+.legend { animation: rise 1s var(--ease) 0.9s both; }
+
+.photo { margin: 28px 0 0; overflow: hidden; border-radius: 14px; background: var(--paper); box-shadow: 0 0 0 1px var(--line); }
+.photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.14) translateY(var(--py, 0px)); will-change: transform; }
+.photo-tall { aspect-ratio: 5 / 4; max-width: 440px; }
+.photo-tall img { object-position: 70% center; }
+.photo-wide { aspect-ratio: 4 / 3; max-width: 520px; }
+.js .photo { clip-path: inset(0 0 100% 0 round 14px); transition: clip-path 1.3s var(--ease) 0.15s; }
+.js .reveal.in .photo { clip-path: inset(0 round 14px); }
+.safe-head h2 { max-width: 12em; }
+
+.pace { display: flex; gap: 8px; margin-top: 16px; }
+.pace i { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--accent); animation: blip 4.8s infinite; animation-delay: calc(var(--i) * 0.6s); }
+
+.steps::after { content: ""; position: absolute; left: 19px; top: 20px; bottom: 20px; width: 1px; background: var(--accent); transform-origin: top; transform: scaleY(var(--p, 0)); }
+.step-n { transition: background 0.5s var(--ease), color 0.5s var(--ease); }
+.steps li.on .step-n { background: var(--accent); color: var(--cream); }
+
+.flow { display: block; width: 100%; height: auto; margin-top: clamp(40px, 6vw, 72px); overflow: visible; }
+.flow-lines { stroke: color-mix(in oklab, var(--cream) 24%, transparent); fill: none; }
+.flow-src rect { fill: transparent; stroke: color-mix(in oklab, var(--cream) 38%, transparent); }
+.flow-src text { fill: var(--cream); font-family: var(--sans); }
+.flow-hub rect { fill: var(--forest-2); stroke: var(--amber); stroke-width: 1.2; }
+.flow-hub.gm rect { stroke: color-mix(in oklab, var(--cream) 60%, transparent); }
+.flow-name { fill: var(--cream); font-family: var(--display); }
+.flow-sub { fill: var(--amber); font-family: var(--sans); letter-spacing: 0.1em; text-transform: uppercase; }
+.flow-dots circle { fill: var(--cream); opacity: 0.85; }
+.in-pulse circle { fill: var(--cream); }
+.out-pulse circle { fill: var(--amber); }
+.pulse { filter: drop-shadow(0 0 5px rgba(232, 176, 96, 0.75)); }
+
+.final { position: relative; overflow: hidden; isolation: isolate; }
+.final::before { content: ""; position: absolute; inset: -4%; z-index: -2; background: url("assets/photo-stamps.jpg") center / cover; animation: drift 28s ease-in-out infinite alternate; }
+.final::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, color-mix(in oklab, var(--forest) 95%, transparent) 0%, color-mix(in oklab, var(--forest) 72%, transparent) 100%); }
+
+.credits { font-size: 12px; }
+.credits a { text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 860px) {
+  .photo-tall { max-width: 100%; }
+  .photo-wide { max-width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-in > *, .legend { animation: none; }
+  .pace i { animation: none; }
+  .js .photo { clip-path: none; transition: none; }
+  .photo img { transform: none; }
+  .final::before { animation: none; }
+}
+
+:lang(zh-TW) .ledger li, :lang(ja) .ledger li, :lang(ko) .ledger li { grid-template-columns: 14em 1fr; }
+:lang(ja) h1, :lang(ja) h2, :lang(ja) h3, :lang(ja) .ledger b, :lang(zh-TW) h2, :lang(zh-TW) .ledger b { word-break: auto-phrase; }
+@media (max-width: 860px) {
+  :lang(zh-TW) .ledger li, :lang(ja) .ledger li, :lang(ko) .ledger li { grid-template-columns: 1fr; }
+}
+
+.flow-wrap { overflow-x: auto; }
+@media (max-width: 700px) { .flow { min-width: 640px; } }
