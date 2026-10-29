@@ -6,7 +6,7 @@
   "nav.start": ["免費開始", "Empieza gratis", "無料で始める", "무료로 시작"],
   "hero.eyebrow": ["從你自己的 Gmail 發出的開發信", "Prospección en frío, desde tu propio Gmail", "あなた自身の Gmail から送るコールドアウトリーチ", "내 Gmail에서 직접 보내는 콜드 아웃리치"],
   "hero.h1": ["讓每封開發信，讀起來都像<em>你</em>親手寫的。", "Cold email que sigue sonando a <em>ti</em>.", "コールドメールでも、<em>あなた</em>の言葉のまま。", "콜드 메일도, 여전히 <em>당신</em>다운 문장으로."],
-  "hero.lede": ["寫一次、加入名單，Dispatch 就會從你的信箱一封一封寄出，控制節奏、追蹤成效，並為沒有回應的人安排一封跟進信。回信會進到你的收件匣，不是我們的。", "Escribe una vez, añade tu lista y Dispatch envía un mensaje a la vez desde tu dirección, con ritmo y seguimiento, y con un recordatorio para quien no responda. Las respuestas llegan a tu bandeja, no a la nuestra.", "一度書いて、リストを追加するだけ。Dispatch があなたのアドレスから1通ずつ、ペースを保って送信し、開封やクリックを追跡し、返事のない相手にはフォローアップも送れます。返信は私たちではなく、あなたの受信トレイに届きます。", "한 번 작성하고 목록을 추가하면, Dispatch가 내 주소에서 한 통씩 일정한 간격으로 보내고 추적하며, 답이 없는 사람에게는 후속 메일을 보낼 수 있습니다. 답장은 우리가 아닌 내 받은편지함으로 들어옵니다."],
+  "hero.lede": ["寫一次、加入名單，Dispatch 就會從你的信箱一封一封寄出，控制節奏、追蹤成效，並可選擇加上一封跟進信。回信會進到你的收件匣，不是我們的。", "Escribe una vez, añade tu lista y Dispatch envía un mensaje a la vez desde tu dirección, con ritmo y seguimiento, y con un seguimiento opcional. Las respuestas llegan a tu bandeja, no a la nuestra.", "一度書いて、リストを追加するだけ。Dispatch があなたのアドレスから1通ずつ、ペースを保って送信し、開封やクリックを追跡し、必要ならフォローアップも送れます。返信は私たちではなく、あなたの受信トレイに届きます。", "한 번 작성하고 목록을 추가하면, Dispatch가 내 주소에서 한 통씩 일정한 간격으로 보내고 추적하며, 원하면 후속 메일도 보낼 수 있습니다. 답장은 우리가 아닌 내 받은편지함으로 들어옵니다."],
   "hero.cta2": ["看看如何運作", "Cómo funciona", "仕組みを見る", "작동 방식 보기"],
   "hero.fine": ["免費方案：每天 20 封，1 個信箱。", "Plan gratuito: 20 envíos al día, un buzón.", "無料プラン：1日20通、メールボックス1つ。", "무료 플랜: 하루 20통, 메일함 1개."],
   "legend.aria": ["進行中活動的示意圖", "Ilustración de una campaña en curso", "配信中のキャンペーンのイメージ", "진행 중인 캠페인 일러스트"],
