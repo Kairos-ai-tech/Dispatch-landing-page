@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · Dispatch</title>
+  <meta name="description" content="How Dispatch handles your data: what we store, how we use Google user data, what we never do, and how to delete it.">
+  <meta name="theme-color" content="#10231b">
+  <link rel="canonical" href="https://dispatch.kairosaitech.com/privacy">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .nav { position: static; background: var(--forest); }
+    .legal { max-width: 760px; padding-block: 56px 80px; }
+    .legal h1 { font-family: var(--display); font-weight: 500; font-size: clamp(34px, 5vw, 48px); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 8px; }
+    .legal .eff { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
+    .legal h2 { font-family: var(--display); font-weight: 500; font-size: 24px; letter-spacing: -0.01em; margin: 40px 0 10px; }
+    .legal p, .legal li { margin-bottom: 12px; }
+    .legal ul { padding-left: 22px; margin-bottom: 12px; }
+    .legal a { color: var(--accent); text-underline-offset: 3px; }
+    .legal .short { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 18px 22px; margin: 24px 0; }
+    .legal .short h2 { margin-top: 0; font-size: 20px; }
+    .legal .short li:last-child { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="nav solid">
+    <div class="wrap nav-in">
+      <a class="brand" href="/" aria-label="Dispatch home">
+        <img src="/assets/favicon.svg" alt="" width="30" height="30">
+        <span>Dispatch</span>
+      </a>
+      <div class="nav-cta">
+        <a class="link" href="/">Back to Dispatch</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap legal">
+    <h1>Privacy Policy</h1>
+    <p class="eff">Effective September 19, 2026</p>
+    <p>Dispatch sends outreach email through your own Gmail account. This policy explains exactly what we store to do that, what we never do with it, and how to take it back.</p>
+
+    <div class="short">
+      <h2>The short version</h2>
+      <ul>
+        <li>We only access your Gmail to send the messages you write. We do not read your inbox.</li>
+        <li>We store your campaign content, recipient lists, tracking events, and an encrypted Gmail refresh token. Nothing else from your mailbox.</li>
+        <li>We never sell your data, show ads, or use your data to train AI or machine-learning models.</li>
+        <li>You can disconnect Gmail in one click, and ask us to delete everything at any time.</li>
+      </ul>
+    </div>
+
+    <h2>1. Who we are</h2>
+    <p>Dispatch (“Dispatch”, “we”, “us”) is an email outreach tool operated by Kairos AI Tech, available at <a href="https://dispatch.kairosaitech.com">dispatch.kairosaitech.com</a> and <a href="https://dispatch.app.kairosaitech.com">dispatch.app.kairosaitech.com</a>. For anything in this policy, write to <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a>.</p>
+
+    <h2>2. What we collect</h2>
+    <p><b>Account information.</b> Your name, email address, and a hashed password when you sign up with email; or your Google account name, email, and profile picture when you use “Continue with Google”.</p>
+    <p><b>Gmail connection.</b> When you connect Gmail, Google gives us an OAuth refresh token for the mailbox you chose. We store it encrypted at rest, together with the Gmail address and the permission scopes you granted. We never see or store your Google password.</p>
+    <p><b>Campaign content.</b> The subjects, message bodies, follow-ups, signatures, and schedules you create in Dispatch.</p>
+    <p><b>Recipient lists.</b> The email addresses and optional first name, last name, and company you paste or import for each campaign.</p>
+    <p><b>Tracking events.</b> When a recipient opens a message (via a tracking pixel), clicks a tracked link, replies, or unsubscribes, we record the event, a timestamp, and, for clicks, the destination URL. For opens we also keep a truncated copy of the mail client’s user-agent string, which helps tell real opens from automated scanners. We do not log recipients’ IP addresses.</p>
+    <p><b>Sending logs.</b> Whether each message was sent, when, and any error Gmail returned.</p>
+    <p><b>Technical data.</b> Standard server logs (request path, status, timestamp) needed to run and secure the service. We do not use third-party analytics or advertising trackers in the app.</p>
+
+    <h2>3. How we use Google user data</h2>
+    <p>Dispatch currently requests one Gmail permission and uses it for exactly one purpose:</p>
+    <ul>
+      <li><b>Send email on your behalf (<code>gmail.send</code>)</b> — to deliver the campaigns and follow-ups you queue, from your address, with your signature.</li>
+    </ul>
+    <p>If we later add reply detection or signature import, they would need the read-only permission (<code>gmail.readonly</code>). We would ask for it separately, you would have to approve it again, and this policy would be updated first. Until then Dispatch cannot read your mail, and replies are handled manually. Signatures are handled manually too, unless you turn on send-as addresses below.</p>
+    <p><b>Optional: send-as addresses.</b> If you turn on send-as addresses in Settings, Google asks for permission to manage your basic Gmail settings (<code>gmail.settings.basic</code>); Google words it broadly because it also covers filters and vacation settings. Dispatch uses it for one purpose: reading the list of your verified “Send mail as” addresses and your signatures, so you can send a campaign from an alias or group address you already set up in Gmail. It never changes a setting, and it does not read, list or change any message. It is off unless you enable it, and you can switch it off by disconnecting Gmail.</p>
+    <p><b>Optional: Gmail labels.</b> If you turn on Gmail labels in Settings, Google asks for a broader Gmail permission (<code>gmail.modify</code>). Dispatch uses it for one purpose: creating labels named <code>Dispatch/…</code> and applying them to messages Dispatch itself sent, so you can filter your outreach by engagement in Gmail. It is off unless you enable it, you can switch it off by disconnecting Gmail, and the labels stay in your mailbox until you delete them.</p>
+    <p>We do not read, store, or analyze any mail in your account, and we do not use Gmail data for advertising, profiling, or model training.</p>
+    <p><b>Limited Use disclosure.</b> Dispatch’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+    <h2>4. How we use everything else</h2>
+    <ul>
+      <li>To provide the service: schedule and send your campaigns, pace them under your daily cap, and show you opens, clicks, and replies.</li>
+      <li>To keep the service working and secure: debugging, abuse prevention, and enforcing the sending limits described in our <a href="https://dispatch.app.kairosaitech.com/terms">Terms</a>.</li>
+      <li>To communicate with you about your account — for example a failed send or a required reconnect. We do not send marketing email.</li>
+    </ul>
+    <p>We do not sell personal data, we do not show advertising, and we do not use your content, recipient lists, or Gmail data to train artificial-intelligence or machine-learning models.</p>
+
+    <h2>5. Your recipients’ data</h2>
+    <p>When you upload a recipient list, you are the controller of that data and we process it on your instructions. You are responsible for having a lawful basis to email those people. Every message Dispatch sends includes a one-click unsubscribe link; when a recipient uses it we mark them as unsubscribed and stop sending to them from that campaign. Recipients can contact us at <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a> to ask which sender uploaded their address.</p>
+
+    <h2>6. Who we share data with</h2>
+    <p>We share data only with the infrastructure providers needed to run Dispatch — hosting, a managed Postgres database, Google’s Gmail API to deliver your mail, and Lemon Squeezy to take payment for paid plans (it receives your payment details directly; we only keep your subscription status, renewal date and card brand and last four digits) — each bound by contract to process it only for us. We do not share data with data brokers, advertisers, or any party for their own purposes. We will disclose information if required by law, and we will tell you when we are allowed to.</p>
+
+    <h2>7. Retention and deletion</h2>
+    <p>We keep your data while your account is active. Disconnecting Gmail deletes the stored refresh token immediately and asks Google to revoke it; campaigns and history stay so your reports still make sense. If you email us asking to delete your account, we remove your account, campaigns, recipient lists, tracking events, and tokens within 30 days, except where we must keep a minimal record for legal or security reasons.</p>
+    <p>You can also revoke Dispatch’s access to your Google account at any time from <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Once revoked, Dispatch cannot send or read anything until you reconnect.</p>
+
+    <h2>8. Security</h2>
+    <p>Traffic is encrypted in transit with TLS. Gmail refresh tokens are encrypted at rest with a key that is not stored alongside the database. Passwords are hashed, never stored in plain text. Access to production systems is limited to the people who operate the service. No system is perfectly secure; if we learn of a breach affecting your data we will notify you without undue delay.</p>
+
+    <h2>9. Your rights</h2>
+    <p>Depending on where you live (including under the GDPR and UK GDPR, and California’s CCPA/CPRA) you may have the right to access, correct, export, restrict, or delete your personal data, and to object to certain processing. You can see and edit most of it directly in the app. For anything else, including a copy of your data or deletion, email <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a> and we will respond within 30 days. You also have the right to lodge a complaint with your local data-protection authority.</p>
+
+    <h2>10. Children</h2>
+    <p>Dispatch is a business tool and is not directed at children under 16. We do not knowingly collect data from them; if you believe we have, contact us and we will delete it.</p>
+
+    <h2>11. Changes to this policy</h2>
+    <p>If we make a material change we will update the effective date above and notify you in the app or by email before it takes effect. Continued use after that date means you accept the updated policy.</p>
+
+    <h2>12. Contact</h2>
+    <p>Questions, requests, or concerns: <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a>.</p>
+    <p>Dispatch is not affiliated with or endorsed by Google. Gmail is a trademark of Google LLC.</p>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>© Kairos AI Tech</span>
+      <nav aria-label="Footer">
+        <a href="https://dispatch.app.kairosaitech.com/help">Help</a>
+        <a href="/privacy">Privacy</a>
+        <a href="https://dispatch.app.kairosaitech.com/terms">Terms</a>
+        <a href="mailto:support@kairosaitech.com">support@kairosaitech.com</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

@@ -138,10 +138,10 @@ for (const lang of LANGS) {
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, "index.html"), render(lang));
 }
-for (const f of ["styles.css", "hero.js", "i18n.js", ".nojekyll", "CNAME"]) fs.copyFileSync(path.join(root, f), path.join(out, f));
+for (const f of ["styles.css", "hero.js", "i18n.js", "privacy.html", ".nojekyll", "CNAME"]) fs.copyFileSync(path.join(root, f), path.join(out, f));
 fs.cpSync(path.join(root, "assets"), path.join(out, "assets"), { recursive: true });
 
-fs.writeFileSync(path.join(out, "sitemap.txt"), LANGS.map(pageUrl).join("\n") + "\n");
+fs.writeFileSync(path.join(out, "sitemap.txt"), [...LANGS.map(pageUrl), `${SITE}/privacy`].join("\n") + "\n");
 
 const robots = [
   "User-agent: *",
