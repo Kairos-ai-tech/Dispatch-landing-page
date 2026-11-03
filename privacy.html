@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Figtree:wght@400;500;600&display=swap">
   <link rel="stylesheet" href="/styles.css">
   <style>
-    .nav { position: static; background: var(--forest); }
+    .nav { position: static; }
+    .nav .back { text-decoration: none; opacity: 0.8; }
     .legal { max-width: 760px; padding-block: 56px 80px; }
     .legal h1 { font-family: var(--display); font-weight: 500; font-size: clamp(34px, 5vw, 48px); letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 8px; }
     .legal .eff { color: var(--muted); font-size: 14px; margin-bottom: 28px; }
@@ -35,7 +36,7 @@
         <span>Dispatch</span>
       </a>
       <div class="nav-cta">
-        <a class="link" href="/">Back to Dispatch</a>
+        <a class="back" href="/">Back to Dispatch</a>
       </div>
     </div>
   </header>
