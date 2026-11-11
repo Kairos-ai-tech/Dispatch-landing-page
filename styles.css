@@ -140,6 +140,7 @@ section { padding-block: clamp(72px, 11vw, 140px); }
 .foot { background: var(--forest); color: color-mix(in oklab, var(--cream) 65%, transparent); font-size: 13px; padding-block: 28px; border-top: 1px solid color-mix(in oklab, var(--cream) 10%, transparent); }
 .foot-in { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
 .foot nav { display: flex; flex-wrap: wrap; gap: 22px; }
+.foot-nav { flex-basis: 100%; gap: 8px 18px !important; }
 .foot a { text-decoration: none; }
 .foot a:hover { color: var(--cream); }
 
