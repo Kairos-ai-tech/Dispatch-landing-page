@@ -25,6 +25,12 @@
     });
   }
 
+  document.querySelectorAll(".foot-nav a[hreflang]").forEach((a) => {
+    a.addEventListener("click", () => {
+      try { localStorage.setItem("lang", a.getAttribute("hreflang")); } catch (e) { void e; }
+    });
+  });
+
   if (here !== "en") return;
   let saved = null;
   try { saved = localStorage.getItem("lang"); } catch (e) { saved = null; }
